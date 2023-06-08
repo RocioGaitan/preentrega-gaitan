@@ -1,0 +1,9 @@
+.ladoDerecho{
+    display: flex;
+    margin-right: 2rem;
+}
+
+.carrito{
+    width: 6rem;
+    
+}

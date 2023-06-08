@@ -1,0 +1,44 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    background-color: #b92020;
+    align-content: center;
+    
+}
+
+h1{
+    margin: 2rem 7rem 1rem 4rem;
+    color: #f5ada0;
+    font-weight:1000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-link{
+    color: #ece9e9;
+}
+
+li{
+    width: 8rem;
+    height: 4rem;
+    text-align: center;
+    list-style: none;
+    color: #ece9e9;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 2rem;
+    background-color: #020202;
+}
+
+.carritoCompras{
+    width: 8rem;
+   display: flex;
+   align-content: center;
+   margin-right: 1rem;
+   background-color: rgba(218, 140, 140, 0.644);
+}
