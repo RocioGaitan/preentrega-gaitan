@@ -1,0 +1,18 @@
+.contenedor{
+  width: 35rem;
+  display: flex;
+  align-items: center;
+ 
+  flex-direction: column;
+           
+}
+
+h3{
+    margin-top: 1rem;
+    color: #000000;
+}
+
+p{
+    color: #000000;
+}
+

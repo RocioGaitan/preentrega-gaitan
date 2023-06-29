@@ -1,20 +1,25 @@
-import './components/NavBar/NavBar'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import './App.css'
-import './components/Mensaje/Mensaje'
-import Mensaje from './components/Mensaje/Mensaje'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import NavBar from './components/NavBar/NavBar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import ItemDetailConteiner from './components/ItemDetailContainer/ItemDetailConteiner'
+import './App.css'
+
+
 
 function App() {
   
 
   return (
     <>
-      <NavBar/>
-      <ItemListContainer greeting = {"¡Gracias por tu compra! Podes hacer click en el botón finalizar compra y se te enviara via email el detalle de los productos que compraste"}/>
-      <Mensaje/>
+     <BrowserRouter>
+       <NavBar/>
+       <Routes>
+          <Route path="/" element = {<ItemListContainer/>} />
+          <Route path="/categoria/:idCategoria" element = {<ItemListContainer/>} />
+          <Route path="/Item/:idItem" element = {<ItemDetailConteiner/>} />
+       </Routes>
+     </BrowserRouter>
     </>
-    
 
   
 

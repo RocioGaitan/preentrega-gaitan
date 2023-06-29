@@ -1,17 +1,23 @@
 import CartWidget from '../CartWidget/CartWidget'
-
+import { Link, NavLink } from "react-router-dom"
 import './NavBar.css'
+
 
 const NavBar = () => {
   return (
   
-<header>
+ <header>
 
  <nav className="navbar navbar-expand-lg">
     
     <div className="container-fluid">
-        
-      <h1> EUPHORIA LENCERIA </h1>
+      
+      <Link to={"/"}>
+       <h1> EUPHORIA LENCERIA </h1>
+      </Link>
+      
+
+
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
       </button>
@@ -20,20 +26,19 @@ const NavBar = () => {
 
         <ul className="navbar-nav">
 
-          <li className="nav-item"> INCIO </li>
-          <li className="nav-item"> TABLA DE TALLES </li>
-          <li className="nav-item"> CONTACTO </li>
+          <li>
+            <NavLink to={`/`}> HOME </NavLink>
+          </li>
           
-          <li className="nav-item dropdown">
-            <h2 className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            LENCERIA
-            </h2>
-           <ul className="dropdown-menu">
-             <li>CONJUNTOS</li>
-             <li>ARNES</li>
-             <li>BODYS</li>
-           </ul>
+          <li>
+            <NavLink to={`/categoria/1`}> CONJUNTO </NavLink>
          </li>
+
+          <li>
+           <NavLink to={`/categoria/2`}> BODY </NavLink>
+          </li>
+
+         
        </ul>
 
       </div>
